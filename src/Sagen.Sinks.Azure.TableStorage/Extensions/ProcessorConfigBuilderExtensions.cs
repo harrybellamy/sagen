@@ -9,9 +9,9 @@ namespace Sagen.Sinks.Azure.TableStorage.Extensions
             string connectionString,
             string containerName)
         {
-            var source = new AzureTableStorageSink(connectionString, containerName);
+            var sink = new AzureTableStorageSink(connectionString, containerName);
 
-            processorConfigBuilder.Source = source;
+            processorConfigBuilder.Sink = sink;
 
             return processorConfigBuilder;
         }
