@@ -6,14 +6,14 @@ using System.IO;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Sagen.Sinks.Azure.TableStorage
+namespace Sagen.Sinks.Azure.BlobStorage
 {
-    public class AzureTableStorageSink : ISink
+    public class AzureBlobStorageSink : ISink
     {
         private readonly string connectionString;
         private readonly string containerName;
 
-        public AzureTableStorageSink(string connectionString, string containerName)
+        public AzureBlobStorageSink(string connectionString, string containerName)
         {
             this.connectionString = connectionString;
             this.containerName = containerName;
