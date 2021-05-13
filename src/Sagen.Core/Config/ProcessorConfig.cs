@@ -1,6 +1,4 @@
-﻿using System;
-
-namespace Sagen.Core.Config
+﻿namespace Sagen.Core.Config
 {
     public class ProcessorConfig
     {

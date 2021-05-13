@@ -4,7 +4,7 @@ namespace Sagen.Core.Config
 {
     public class ProcessorConfigBuilder
     {
-        public ISink? Source { get; set; }
+        public ISource? Source { get; set; }
         public ISink? Sink { get; set; }
 
         public ProcessorConfig Build()
