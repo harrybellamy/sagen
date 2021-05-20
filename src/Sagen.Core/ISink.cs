@@ -5,6 +5,11 @@ namespace Sagen.Core
 {
     public interface ISink
     {
+        /// <summary>
+        /// Save the <see cref="ApiResource"/> instances as an API.
+        /// </summary>
+        /// <param name="data">The data to save.</param>
+        /// <returns>An awaitable task.</returns>
         Task SaveDataAsync(IEnumerable<ApiResource> data);
     }
 }

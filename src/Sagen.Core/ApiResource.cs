@@ -19,6 +19,9 @@ namespace Sagen.Core
 
         public string Name { get; }
 
+        /// <summary>
+        /// The records under this resource.
+        /// </summary>
         public IEnumerable<ApiRecord> Records { get; }
     }
 }

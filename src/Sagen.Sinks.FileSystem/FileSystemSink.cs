@@ -6,6 +6,9 @@ using System.Threading.Tasks;
 
 namespace Sagen.Sinks.FileSystem
 {
+    /// <summary>
+    /// Sink to save API data to a local file system.
+    /// </summary>
     public class FileSystemSink : ISink
     {
         private readonly string apiRoot;
@@ -15,6 +18,11 @@ namespace Sagen.Sinks.FileSystem
             this.apiRoot = apiRoot;
         }
 
+        /// <summary>
+        /// Save the <see cref="ApiResource"/> instances to the <see cref="apiRoot"/>.
+        /// </summary>
+        /// <param name="data">The data to save.</param>
+        /// <returns>An awaitable task.</returns>
         public async Task SaveDataAsync(IEnumerable<ApiResource> data)
         {
             foreach (var resource in data)

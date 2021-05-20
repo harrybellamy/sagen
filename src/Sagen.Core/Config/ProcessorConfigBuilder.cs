@@ -2,6 +2,9 @@
 
 namespace Sagen.Core.Config
 {
+    /// <summary>
+    /// Builder for the <see cref="ProcessorConfig"/>.
+    /// </summary>
     public class ProcessorConfigBuilder
     {
         public ISource? Source { get; set; }

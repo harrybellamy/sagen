@@ -9,7 +9,7 @@ namespace Sagen.Sinks.FileSystem.Extensions
         /// </summary>
         /// <param name="processorConfigBuilder">The config builder to add the sink to.</param>
         /// <param name="apiRoot">Path to the folder where the files are saved to.</param>
-        /// <returns>The processorConfigBuilder.</returns>
+        /// <returns>The <see cref="ProcessorConfigBuilder"/>.</returns>
         public static ProcessorConfigBuilder AddFileSink(
             this ProcessorConfigBuilder processorConfigBuilder,
             string apiRoot)

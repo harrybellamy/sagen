@@ -8,6 +8,9 @@ using System.Threading.Tasks;
 
 namespace Sagen.Sinks.Azure.BlobStorage
 {
+    /// <summary>
+    /// Sink to save API data to an Azure Blob Storage container.
+    /// </summary>
     public class AzureBlobStorageSink : ISink
     {
         private readonly string connectionString;
@@ -19,6 +22,11 @@ namespace Sagen.Sinks.Azure.BlobStorage
             this.containerName = containerName;
         }
 
+        /// <summary>
+        /// Save the <see cref="ApiResource"/> instances to the Blob Storage container.
+        /// </summary>
+        /// <param name="data">The data to save.</param>
+        /// <returns>An awaitable task.</returns>
         public async Task SaveDataAsync(IEnumerable<ApiResource> data)
         {
             var blobContainerClient = GetBlobContainerClient();
