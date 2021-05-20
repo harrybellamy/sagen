@@ -3,6 +3,9 @@ using System.Threading.Tasks;
 
 namespace Sagen.Core
 {
+    /// <summary>
+    /// A sink for API data.
+    /// </summary>
     public interface ISink
     {
         /// <summary>

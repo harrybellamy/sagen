@@ -3,6 +3,9 @@ using System.Threading.Tasks;
 
 namespace Sagen.Core
 {
+    /// <summary>
+    /// A source of API data.
+    /// </summary>
     public interface ISource
     {
         /// <summary>
