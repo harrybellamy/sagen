@@ -1,3 +1,5 @@
+[![CI](https://github.com/harrybellamy/sagen/actions/workflows/dotnet-ci.yml/badge.svg)](https://github.com/harrybellamy/sagen/actions/workflows/dotnet-ci.yml)
+
 
 # Sagen 
 Sagen is a static API generator for .NET applications.
