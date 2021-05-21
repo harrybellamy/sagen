@@ -17,4 +17,4 @@ jobs:
     - name: Pack
       run: dotnet pack src/Sagen.Core/Sagen.Core.csproj
     - name: Push
-      run: dotnet push **/*.nupkg --no-build
+      run: dotnet push **/*.nupkg --no-build -k ${{ GITHUBTOKEN }}
