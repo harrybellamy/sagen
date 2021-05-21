@@ -15,7 +15,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Sagen.IntegrationTests", "S
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Sagen.Sources.Csv.UnitTests", "Sagen.Sources.Csv.UnitTests\Sagen.Sources.Csv.UnitTests.csproj", "{6BB498E3-F810-4DEC-ADD7-1C78562E8CD0}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Sagen.Sinks.Azure.BlobStorage", "Sagen.Sinks.Azure.TableStorage\Sagen.Sinks.Azure.BlobStorage.csproj", "{DF156EF0-8717-4A58-AD9A-1AFB25E18D08}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Sagen.Sinks.Azure.BlobStorage", "Sagen.Sinks.Azure.BlobStorage\Sagen.Sinks.Azure.BlobStorage.csproj", "{DF156EF0-8717-4A58-AD9A-1AFB25E18D08}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
