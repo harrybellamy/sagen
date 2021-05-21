@@ -18,8 +18,8 @@ jobs:
       with:
         dotnet-version: 3.1.x
     - name: Restore dependencies
-      run: dotnet restore
+      run: dotnet restore src/Sagen.sln
     - name: Build
-      run: dotnet build --no-restore
+      run: dotnet build src/Sagen.sln --no-restore
     - name: Test
-      run: dotnet test --no-build --verbosity normal
+      run: dotnet test src/Sagen.sln --no-build --verbosity normal
