@@ -22,17 +22,17 @@ namespace Sagen.IntegrationTests
 
             var configBuilder = new ProcessorConfigBuilder();
             configBuilder
-                .AddCsvSource(@".\TestData\TestData.csv", "Cars", "Id")
-                .AddFileSink(@".\Output");
+                .AddCsvSource(@"./TestData/TestData.csv", "Cars", "Id")
+                .AddFileSink(@"./Output");
 
             var config = configBuilder.Build();
 
             var processor = new Processor();
             await processor.ProcessAsync(config);
 
-            Assert.True(File.Exists(@".\Output\Cars\1\data.json"));
-            Assert.True(File.Exists(@".\Output\Cars\2\data.json"));
-            Assert.True(File.Exists(@".\Output\Cars\3\data.json"));
+            Assert.True(File.Exists(@"./Output/Cars/1/data.json"));
+            Assert.True(File.Exists(@"./Output/Cars/2/data.json"));
+            Assert.True(File.Exists(@"./Output/Cars/3/data.json"));
         }
     }
 }
