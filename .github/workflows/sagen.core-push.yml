@@ -14,7 +14,9 @@ jobs:
       uses: actions/setup-dotnet@v1
       with:
         dotnet-version: 3.1.x
+    - name Create Packages Directory
+      run: mkdir src/packages
     - name: Pack
-      run: dotnet pack src/Sagen.Core/Sagen.Core.csproj
+      run: dotnet pack src/Sagen.Core/Sagen.Core.csproj -o src/packages
     - name: Push
-      run: dotnet push **/*.nupkg --no-build -k ${{ secrets.GITHUBTOKEN }}
+      run: dotnet push src/packages/*.nupkg --no-build -k ${{ secrets.GITHUBTOKEN }} 
