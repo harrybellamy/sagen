@@ -19,4 +19,4 @@ jobs:
     - name: Pack
       run: dotnet pack src/Sagen.Core/Sagen.Core.csproj -o src/packages
     - name: Push
-      run: dotnet nuget push "src/packages/*.nupkg" -k ${{ secrets.GITHUBTOKEN }} 
+      run: dotnet nuget push "src/packages/*.nupkg" -k ${{ secrets.GITHUBTOKEN }} -s https://nuget.org
